@@ -1,0 +1,14 @@
+query {
+  characters(page: 2) {
+    results {
+      ...CharacterFields
+    }
+  }
+}
+
+fragment CharacterFields on Characters {
+  id
+  name
+  status
+  image
+}
